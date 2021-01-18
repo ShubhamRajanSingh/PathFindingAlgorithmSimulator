@@ -4,6 +4,11 @@
 # Technologies 
   I have used Javafx for this project. Javafx is made to replace swing and is much for powerfull then swing.
 # Description
+  In this Project i have used JavaFx  to give a visual representation of A* and Dijkstra's Path finding Algorithm.I have used this two algorithms to get the shortest path between two specified points. I have also shown some statistics in the left panel to get some information like Number of nodes considered, time rewuited,etc.This Statistics can help the user to compare the two Algorithms.
+  
+# Blog
+  To know more about this project [click here]( https://shubhamrsingh.blogspot.com/2021/01/path-finding-algorithm-and-dijkstras.html)
+# Sample Images
 ![alt text](https://github.com/ShubhamRajanSingh/PathFindingAlgorithmSimulator/blob/master/AlgorithmSimulation/src/img/Astar.png)
 ![alt text](https://github.com/ShubhamRajanSingh/PathFindingAlgorithmSimulator/blob/master/AlgorithmSimulation/src/img/Dijkstra.png)
 ![alt text](https://github.com/ShubhamRajanSingh/PathFindingAlgorithmSimulator/blob/master/AlgorithmSimulation/src/img/mainScreen.png)
