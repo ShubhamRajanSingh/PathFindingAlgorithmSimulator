@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="623.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AlgorithmMainController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="623.0" prefWidth="1001.0">
+         <left>
+            <VBox fx:id="vBox" prefHeight="623.0" prefWidth="193.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="56.0" prefWidth="181.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label layoutX="20.0" layoutY="20.0" text="Tile Type:-">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <ComboBox fx:id="tileType" layoutX="81.0" layoutY="16.0" onAction="#setTileType" prefHeight="25.0" prefWidth="85.0" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="159.0" prefWidth="181.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label layoutX="18.0" layoutY="10.0" text="Algorithm:-">
+                        <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <ComboBox fx:id="chooseAlgorithm" layoutX="14.0" layoutY="34.0" prefHeight="25.0" prefWidth="161.0" />
+                        <Button fx:id="createMaze" layoutX="19.0" layoutY="78.0" mnemonicParsing="false" onAction="#createMazeHandler" prefHeight="25.0" prefWidth="149.0" text="Create Maze" />
+                        <Button fx:id="clearMaze" layoutX="20.0" layoutY="120.0" mnemonicParsing="false" onAction="#clearMazeHandler" prefHeight="25.0" prefWidth="148.0" text="Clear Maze" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="statPane" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="35.0" layoutY="16.0" prefHeight="27.0" prefWidth="109.0" text="STATISTICS" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="49.0" text="Total Tiles:-">
+                           <padding>
+                              <Insets left="8.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutY="62.0" text="Total Walls:-">
+                           <padding>
+                              <Insets left="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutY="87.0" prefHeight="19.0" prefWidth="80.0" text="Visited Tiles:-">
+                           <padding>
+                              <Insets left="10.0" top="7.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="114.0" text="Path Found:-" />
+                        <Label layoutX="6.0" layoutY="135.0" text="Path Cost:-">
+                           <padding>
+                              <Insets left="4.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="4.0" layoutY="155.0" text="Time:-">
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="totalTile" layoutX="76.0" layoutY="49.0" text="0" />
+                        <Label fx:id="totalWall" layoutX="77.0" layoutY="73.0" text="0" />
+                        <Label fx:id="visitedTile" layoutX="81.0" layoutY="97.0" text="0" />
+                        <Label fx:id="pathFound" layoutX="84.0" layoutY="114.0" text="0" />
+                        <Label fx:id="pathCost" layoutX="74.0" layoutY="135.0" text="0" />
+                        <Label fx:id="time" layoutX="50.0" layoutY="154.0" text="0" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="123.0" prefWidth="181.0">
+                     <children>
+                        <Button fx:id="run" layoutX="9.0" layoutY="25.0" mnemonicParsing="false" onAction="#runHandler" text="Run" />
+                        <Button fx:id="clear" layoutX="70.0" layoutY="25.0" mnemonicParsing="false" onAction="#clearHandler" text="Clear" />
+                        <Button fx:id="exit" layoutX="134.0" layoutY="25.0" mnemonicParsing="false" onAction="#exitHandler" text="Exit" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

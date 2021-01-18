@@ -1,0 +1,29 @@
+#borderPane  {
+    -fx-background-color: #3E5151;
+   
+}
+#vBox  {
+    -fx-background-color: #A4ADAD;
+    -fx-border-color: #6A7373 ;
+    -fx-border-width: 5 ; 
+   
+
+}
+#statPane{
+    -fx-border-radius: 25px;
+    -fx-border-color: #3F4141 ;
+    -fx-border-width: 3 ;
+	
+	
+}
+.button{
+	
+	
+    -fx-text-fill: #3c3b3b;
+     -fx-font-weight: bold;
+    -fx-border-color: #606161;
+    -fx-border-radius: 5;
+    -fx-border-width: 2 ;
+   
+}
+
