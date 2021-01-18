@@ -1,3 +1,3 @@
 # PathFindingAlgorithmSimulator
-https://github.com/ShubhamRajanSingh/PathFindingAlgorithmSimulator/tree/master/AlgorithmSimulation/src/img
-![alt text](https://github.com/ShubhamRajanSingh/PathFindingAlgorithmSimulator/tree/master/AlgorithmSimulation/src/img/Astar.png)
+
+![alt text](https://github.com/ShubhamRajanSingh/PathFindingAlgorithmSimulator/blob/master/AlgorithmSimulation/src/img/Astar.png)
